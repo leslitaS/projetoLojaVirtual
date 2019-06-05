@@ -1,2 +1,2 @@
-# projetoLojaVirtual.php
-projetoLojaVirtual.php
+# ProjetoLojaVirtual
+Ws - Loja
