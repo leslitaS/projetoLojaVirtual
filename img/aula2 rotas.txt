@@ -1,0 +1,61 @@
+https://digitalhousebr.tucampus.org/login/change_password.php
+
+https://wetransfer.com/downloads/cb34e8b6c3ca341ed9e3bdd270b9194720190412171245/29e87f
+
+encurtador.com.br/hqvr
+
+para carregar tudo o html no index----> html:5 y carrega tudo
+
+Rotas no HTML
+id para 1 elemento
+class--> selecciona elementos de un determinado tipo como class dev
+title--> define un texto cuando el mouse se pone sobre el
+caminho: path
+
+caminho absoluto---> se le da la ruta directa de donde esta un file, el path es X
+
+camiho relativo---> sao algunos caminos, el archivo na mesma pasta
+
+
+    background-image: url(/../../img/logo.png);----> .. vuelve uma pasta atras
+
+links:
+
+ancora--> links internos
+	<a href="#bio"> Biografia</a>
+link.index.php--> o index.php diz que e a primeira pagina para logear o usuario
+
+tratar de mantener todas la cosas dentro de pastas respectivas
+
+VIDEOS:
+
+mp4, Ogg
+
+si no colocamos controls no video no carrega o funconamento para play
+usamos porter y acarregamos a img para que el video tenga una imagen al inicio antes de cargar
+
+
+<video width="400px"  controls poster="img/poster.jpg"
+            src="video/videoHTML.mp4" type="video/mp4">
+</video>
+       
+
+
+
+
+div--> caja para colocar cosas
+
+PROPRIEDADES CSS
+
+RGBA---> es para ver la transparencia
+rgba(240,83,49,0.5)
+
+digitar uma cor na google y carrega el codigo hexadecimal
+
+
+background-attachment: scroll;
+[fixed | local]
+
+background-attachment:fixed --> una imagen que acompana al scroll sobe e baja
+
+

@@ -1,11 +1,11 @@
 <?php 
-
-include "funcoes.php";
+// incluyo el arquivo funcoes.php para tener acceso a mis funcoes
+include "funcoes.php"; 
 //Aula sobre funções //
 
 
 
-$usuario = logarUsuario("Wallis Silva", 1);
+$usuario = logarUsuario("Leslie Cespedes", 1);
 
 
 
@@ -32,7 +32,7 @@ $produtos = json_decode($jsonProdutos,true); // para transformar um json a strin
 $produtos = $produtos['Produtos'];
 
 
-addProduto("Curso Mobile Androide",  "Curso para criar um app", 2300, "img/foto2.png");
+// addProduto("Curso Mobile Androide",  "Curso para criar um app", 2300, "img/foto2.png");
 $categorias = ["cursos", "Tutoriais", "Artigos", "Forum", "Codigos"];
 
 ?>
