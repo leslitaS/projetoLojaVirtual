@@ -43,3 +43,26 @@ function validarDataValidade($dataValidade){
 function validarCVV($cvv) {
     return strlen($cvv) == 3;
 }
+
+
+
+function addUsuario ($nomeUsuario,$emailUsuario,$senhaUsuario, $nivelDeAcesso){
+        
+    $jsonUsuarios = file_exists("Usuarios.json")? file_get_contents('Usuarios.json'):""; // llamo al arqivo json y pego todo el conteudo
+    $Usuarios = json_decode($jsonUsuarios,true); // para transformar um json a string asociativa con el true porq json_decode devolve um obj
+    // $produtos = $produtos['Produtos'];
+
+    $itensUsuarios = is_array($Usuarios['usuarios'])?count($Usuarios['usuarios']):0;
+    // count($Usuarios['usuarios'])
+    $chave = $itensUsuarios  + 1;
+    $novoUsuario = ["id"=>"usuario$chave",'nome' =>$nomeUsuario, 'email'=>$emailUsuario, 'senha'=>$senhaUsuario, 'nivelAcesso' =>$nivelDeAcesso];
+   
+    $Usuarios["usuarios"][]=$novoUsuario; // acesso a nosso primeira array
+
+    $jsonUsuarios = json_encode($Usuarios); // pego toda la informacion y lo vuelvo a transformar a json para q sea compatible
+
+   
+
+    
+    return  file_put_contents('Usuarios.json', $jsonUsuarios);// coloco json en el file_put_contents;
+}
