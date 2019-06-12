@@ -34,6 +34,7 @@ foreach ($Usuarios['usuarios'] as $key => $usuario) {
 }
 
 if (isset($usuarioExiste) && password_verify($senha,$usuarioExiste['senha'])) {
+    logarUsuario($usuarioExiste['nome'],$usuarioExiste['nivelAcesso']) // ver q este escrito en Usuarios.json
     header("Location:index.php");
 }else {
     echo " email ou asenha invalida! Tente Novamente";

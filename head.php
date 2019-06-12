@@ -1,6 +1,8 @@
 <?php 
 // incluyo el arquivo funcoes.php para tener acceso a mis funcoes
 include "funcoes.php"; 
+
+$usuario = isset($_SESSION['usuario'])?$_SESSION['usuario']:"";
 //Aula sobre funções //
 
 
